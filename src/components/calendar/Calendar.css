@@ -1,0 +1,14 @@
+.Calendar {
+    height: 100%;
+    width: 100%;
+    max-width: 1265px;
+    margin: 0 auto;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 7;
+    padding: 20px;
+}
+
+
