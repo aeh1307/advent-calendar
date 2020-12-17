@@ -51,6 +51,27 @@
     transform: rotateY(180deg);
     height: 140px;
     width: 140px;
+    display: flex;
+}
+
+.FlapBackDayNumber {
+    width: 10px;
+    padding: 8px 0 0 10px;
+    left: 0;
+    font-size: 20px;
+}
+
+.FlapContentList {
+    width: 100px;
+    height: 100px;
+    top: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(-30deg);
 }
 
 /* Ipad Portrait and Landscape */

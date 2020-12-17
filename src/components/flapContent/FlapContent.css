@@ -1,0 +1,30 @@
+.FlapContent {
+    width: 70px;
+    position: absolute;
+    display: flex;
+    align-self: center;
+}
+
+#FlapContent_0 {
+    transform: rotate(0deg) skewY(0deg);
+}
+
+#FlapContent_1 {
+    transform:  rotate(120deg) skewY(0deg);
+}
+
+#FlapContent_2 {
+    transform: rotate(240deg) skewY(0deg);
+}
+
+#FlapContent_0_symbol {
+    transform: rotate(30deg);
+}
+
+#FlapContent_1_symbol {
+    transform: rotate(270deg);
+}
+
+#FlapContent_2_symbol {
+    transform: rotate(150deg);
+}
