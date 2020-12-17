@@ -5,7 +5,7 @@ import './Flap.css';
 export const Flap = (props) => {
     return (
         <li className="FlapNumber">
-            {props.dayNumber}
+            { props.dayNumber }
         </li>
     );
 };

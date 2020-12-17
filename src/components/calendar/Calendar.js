@@ -1,16 +1,20 @@
 import React from 'react';
-import { Flap } from "../flap/Flap";
+import {Flap} from "../flap/Flap";
 
 import './Calendar.css';
+import { Header } from "../header/Header";
 
 export const Calendar = () => {
 
-    const days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
-    const listItems = days.map((number) => <Flap dayNumber={number}/>);
+    const days = Array.from(Array(24).keys());
+    const listItems = days.map((number) => <Flap dayNumber={number+1}/>);
 
     return (
-        <ul className="Calendar">
-            {listItems}
-        </ul>
+        <div className="Calendar">
+            <Header/>
+            <ul className="CalendarList">
+                {listItems}
+            </ul>
+        </div>
     );
 };
