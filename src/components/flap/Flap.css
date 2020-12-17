@@ -1,14 +1,56 @@
-.FlapNumber {
-    color: white;
+.Flap {
     list-style: none;
     font-size: 32px;
     margin: 20px;
-    background-color: rgba(255,255,255,0.4);
     height: 140px;
     width: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
+}
+
+.FlipCard {
+    background-color: transparent;
+    height: 140px;
+    width: 140px;
+    position: absolute;
+}
+
+.FlipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+}
+
+.FlapFront, .FlapBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.FlapFront {
+    color: white;
+    background-color: rgba(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 140px;
+}
+
+.FlapBack {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    height: 140px;
+    width: 140px;
 }
 
 /* Ipad Portrait and Landscape */
@@ -16,12 +58,9 @@
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
-    .FlapNumber {
-        margin: 10px;
-        height: 110px;
-        width: 110px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .Flap {
+        padding: 7px;
+        height: 100px;
+        width: 100px;
     }
 }

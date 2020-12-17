@@ -24,21 +24,13 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
     .Calendar {
-        background-image: url('../../assets/img/chadMaddenImg.jpg');
-        background-size: cover;
         padding: 0 0 25px 0;
     }
 
     .CalendarList {
         width: 85vw;
-        max-width: 1265px;
-        margin: 0 20px;
-        border: 5px solid white;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        z-index: 7;
-        padding: 20px;
+        justify-self: center;
     }
 }
 
