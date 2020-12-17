@@ -29,12 +29,13 @@
     align-items: center;
     font-family: 'Quicksand', sans-serif;
 }
+
 .ScoreBoardList {
     list-style: none;
     text-decoration: none;
     border-left: 1px solid grey;
     padding: 10px;
-    width: 80%;
+    width: 85%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -47,6 +48,10 @@
     align-items: center;
 }
 
+.SymbolScore {
+    padding-left: 4px;
+}
+
 .Symbols {
-padding-right: 10px;
+    padding-right: 10px;
 }

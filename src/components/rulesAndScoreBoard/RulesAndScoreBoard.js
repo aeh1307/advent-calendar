@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import {faCandyCane, faGift, faStar} from "@fortawesome/free-solid-svg-icons";
+import { faCandyCane, faGift, faStar } from "@fortawesome/free-solid-svg-icons";
 
-import {EventEmitter} from "../../utils/EventEmitter";
+import { EventEmitter } from "../../utils/EventEmitter";
 
 import './RulesAndScoreBoard.css';
 
@@ -30,7 +30,7 @@ export const RulesAndScoreBoard = () => {
                     stars++;
                     break;
             }
-            return;
+            return null;
         })
         setNumberOfCandyCanes(candy);
         setNumberOfGifts(gifts);
@@ -54,7 +54,7 @@ export const RulesAndScoreBoard = () => {
                             size="lg"
                         />
                         Stars:
-                        <div>{numberOfStars}</div>
+                        <div className="SymbolScore">{numberOfStars}</div>
                     </li>
                     <li className="ScoreBoardItems">
                         <FontAwesomeIcon
@@ -62,7 +62,8 @@ export const RulesAndScoreBoard = () => {
                             icon={faCandyCane}
                             size="lg"
                         />
-                        Candy Canes: <div>{numberOfCandyCanes}</div>
+                        Candy Canes:
+                        <div className="SymbolScore">{numberOfCandyCanes}</div>
                     </li>
                     <li className="ScoreBoardItems">
                         <FontAwesomeIcon
@@ -70,7 +71,8 @@ export const RulesAndScoreBoard = () => {
                             icon={faGift}
                             size="lg"
                         />
-                        Gifts: <div>{numberOfGifts}</div>
+                        Gifts:
+                        <div className="SymbolScore">{numberOfGifts}</div>
                     </li>
                 </ul>
             </div>
