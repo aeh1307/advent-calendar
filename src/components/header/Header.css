@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+.Header {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+}
+
 .CalendarTitle {
     z-index: 1;
-    color: white;
+    color: #a70505;
     font-size: 75px;
     font-family: 'Dancing Script', cursive;
     top: 0;
-    margin: 30px 20px 20px 20px;
+    margin: 30px 210px 20px 20px;
 }
 
 /* Ipad Portrait and Landscape */
@@ -14,7 +19,12 @@
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
+    .Header {
+        width: 74vw;
+        height: 15vh;
+    }
     .CalendarTitle {
-        margin: 10px 10px 0 10px;
+        margin: 10px 40px 0 10px;
+        font-size: 58px;
     }
 }

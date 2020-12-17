@@ -4,7 +4,6 @@ import React from 'react';
 import './FlapContent.css';
 
 export const FlapContent = (props) => {
-console.log(props)
     return (
         <>
             {props.symbols.map((symbol, index, arr) => {

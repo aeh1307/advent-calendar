@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.RulesAndScoreBoard {
+    width: 400px;
+    height: 140px;
+    background-color: white;
+    display: flex;
+    align-self: center;
+}
+
+.Rules {
+    width: 220px;
+    height: 140px;
+    padding: 0 20px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ScoreBoard {
+    width: 300px;
+    height: 140px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.ScoreBoardList {
+    list-style: none;
+    text-decoration: none;
+    border-left: 1px solid grey;
+    padding: 10px;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ScoreBoardItems {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.Symbols {
+padding-right: 10px;
+}

@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { FlapContent } from "../flapContent/FlapContent";
+import React, {useState} from 'react';
+import {FlapContent} from "../flapContent/FlapContent";
+import {EventEmitter} from "../../utils/EventEmitter";
 
 import './Flap.css';
-import { faCandyCane, faGift, faStar } from "@fortawesome/free-solid-svg-icons";
+import {faCandyCane, faGift, faStar} from "@fortawesome/free-solid-svg-icons";
 
 const iconNames = [faGift, faCandyCane, faStar];
 
@@ -27,9 +28,7 @@ export const Flap = (props) => {
         if (!isFlipped) {
             document.querySelector(`#FlipCard_${dayNumber} .FlipCardInner`).style.transform = `rotateY(180deg)`;
             setIsFlipped(true);
-        } else {
-            document.querySelector(`#FlipCard_${dayNumber} .FlipCardInner`).style.transform = `rotateY(0deg)`;
-            setIsFlipped(false);
+            EventEmitter.dispatch('flapOpened', flapContentSymbols);
         }
     }
     return (
